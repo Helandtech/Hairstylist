@@ -1,0 +1,599 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: #fff;
+
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo {
+  width: 5%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+section {
+  border: 1px solid #fff;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 3rem;
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/*background
+/*******************************************/
+
+section.main {
+  background-image: url("https://github.com/Helandtech/Hair-Salon/blob/main/Img/main.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/******************************************
+/*header
+/*******************************************/
+
+li {
+  display: inline;
+  margin-right: 5rem;
+  font-size: 1vw;
+}
+
+ul a {
+  color: black;
+}
+
+ul {
+  text-align: center;
+}
+
+
+/******************************************
+/*section.main
+/*******************************************/
+
+section.main {
+  color: #fff;
+}
+
+h1 {
+  font-size: 10vh;
+  margin-left: 12rem;
+  font-weight: lighter;
+  margin-top: 15rem;
+  word-spacing: 1rem;
+  letter-spacing: 1rem;
+}
+
+
+/*black buttons*/
+.offer,
+section.main>p+span,
+span.uppercase {
+  border: 1px solid black;
+  background-color: black;
+  color: #fff;
+
+}
+
+.offer {
+  margin-left: 12rem;
+  padding: 1.5rem 2rem 4rem 2rem;
+  width: 15rem;
+  line-height: 2;
+
+}
+
+.offer span {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+}
+
+.offer span a {
+  color: black;
+}
+
+section.main>p {
+  display: block;
+}
+
+section.main>p+span {
+  padding: 1rem;
+  margin-left: 12rem;
+}
+
+section.main>p {
+  margin-left: 12rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+div.offer {
+  margin-top: 3rem;
+}
+
+span.big {
+  font-size: 2vw;
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 0;
+  padding-right: 0.2rem;
+
+}
+
+/******************************************
+/*section.service
+/*******************************************/
+section.service>div {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 5rem;
+}
+
+.service>p {
+  width: 5rem;
+}
+
+/******************************************
+/*section.info
+/*******************************************/
+/*section.info {
+  clear: both;
+ text-align: center;
+  height: auto;
+  overflow: auto;
+
+  background-color: #f3f4f6;
+}*/
+
+section.info {
+  background-color: #f3f4f6;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+h2.uppercase {
+  padding-top: 2rem;
+}
+
+div.styling-purpose {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+
+div.left {
+  float: left;
+  width: 50%;
+}
+
+div.right {
+  float: right;
+  width: 50%;
+}
+
+video {
+  width: 140%;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-left: 2rem;
+}
+
+.left>h2 {
+  width: 15rem;
+}
+
+.left>h2+p {
+  width: 23rem;
+  text-align: justify;
+
+}
+
+/******************************************
+/*section.staff
+/*******************************************/
+section.staff {
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+
+figure>img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+div.uppercase>figure {
+  float: left;
+  width: 33.3%;
+  margin: 0 auto;
+}
+
+figcaption {
+  width: 60%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+section.staff>div.uppercase {
+  width: 60%;
+  margin: 0 auto;
+  overflow: auto;
+  margin: 2rem auto;
+
+}
+
+section.staff>h2 {
+  text-align: center;
+}
+
+
+/******************************************
+/*section.discount
+/*******************************************/
+
+
+section.discount {
+  clear: both;
+  /*background-color: #f3f4f6;
+  background-image: url("https://github.com/Helandtech/Hair-Salon/blob/main/Img/Offer%20banner.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: 50%;*/
+}
+
+div.offer-section {
+  border: 1px solid black;
+  width: 70%;
+  margin: 3rem auto;
+  background-color: #f3f4f6;
+  background-image: url("https://raw.githubusercontent.com/Helandtech/Hair-Salon/d2cf07d84aa477023cbd0bebc8bdf439c679ea17/Img/Offer%20banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+div.offer-section>h4,
+div.offer-section>p,
+div.offer-section span {
+  margin-left: 10%;
+}
+
+div.offer-section>h4 {
+  padding-top: 4rem;
+
+}
+
+div.offer-section>span {
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+}
+
+
+div.offer-section>p {
+  font-size: 1.5vw;
+}
+
+
+/******************************************
+/*section.look
+/*******************************************/
+section.look {
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+section.look>h2.uppercase {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+div.look-book {
+  overflow: auto;
+  width: 50%;
+  margin: 0 auto;
+}
+
+div.look-book>img {
+  float: left;
+  width: 33.33%;
+  padding-left: 1rem;
+}
+
+div.styling {
+  clear: both;
+  height: 2rem;
+}
+
+
+
+
+
+
+/*media queries*/
+
+@media only screen and (max-width: 1390px) {
+
+  div.left,
+  div.right {
+    float: none;
+  }
+
+  section.info {
+    display: block;
+    /* height: 100%;
+    overflow: auto;*/
+  }
+
+  video {
+    /* margin-left: 0;
+    padding-left: 0;*/
+    width: 100%;
+  }
+
+  div.left {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  div.right {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  div.left>h2.uppercase {
+    text-align: left;
+    width: 100%;
+  }
+
+  div.left>h2.uppercase+p {
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  video {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  div.uppercase>figure {
+    float: none;
+    margin-bottom: 1rem;
+  }
+
+  figure>img {
+    width: 100%;
+  }
+
+  figcaption {
+    width: 100%;
+  }
+
+
+  div.styling {
+    display: none;
+  }
+
+  div.look-book>img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  div.styling-purpose {
+    margin: 0;
+    width: 100%;
+
+  }
+
+  div.left>h2.uppercase {
+    text-align: center;
+  }
+
+  div.left span.uppercase.btn {
+    display: block;
+    width: 10rem;
+    margin: 2rem auto;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  section.service>div {
+    float: none;
+    width: 100%;
+    padding: 3rem 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+
+  section.service>div+img+h3+p {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 1130px) {
+
+  h1 {
+    font-size: 8vw;
+    margin-left: 5%;
+
+  }
+
+  .offer,
+  section.main>p+span,
+  section.main>p {
+    margin-left: 10%;
+
+
+  }
+
+}
+
+
+@media only screen and (max-width: 310px) {
+
+  div.right {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+  figcaption {
+    font-size: 2vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1497px) {
+
+  header {
+    margin-top: 0.5rem;
+  }
+
+  ul.main-navigation {
+    display: none;
+  }
+
+  /*ul.media-menu {
+    position: relative;
+  }
+
+  img.logo {
+    width: 15vw;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+  }
+
+  .menu {
+    width: 5vw;
+    position: absolute;
+    right: 0.5vw;
+
+  }
+
+  ul {
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 80%;
+
+  }
+
+  li {
+    margin-left: 5rem;
+  }*/
+
+  img.logo {
+    width: 15vw;
+
+  }
+
+  .menu {
+    width: 5vw;
+
+  }
+
+  li.right,
+  li.left {
+    overflow: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  li.right {
+   float: right;
+  }
+
+  li.left {
+    float: left;
+
+  }
+
+
+  section.main{
+    clear: both;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1497px) {
+  ul.media-menu {
+    display: none;
+
+  }
+
+}
